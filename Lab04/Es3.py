@@ -11,6 +11,7 @@ def f(s):
     for i in s:
         s = s.translate(str.maketrans("", "", string.whitespace))
         s = s.translate(str.maketrans("", "", string.punctuation))
+        s = s.translate(str.maketrans("", "", string.digits))
         if i in vowels:
             s = s.translate(str.maketrans("", "", vowels))
     print(s)
