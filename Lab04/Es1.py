@@ -3,7 +3,7 @@
 def tupleMod(t1, t2, n):
     lst = list(t1)
     lst2 = list(t2)
-    if n <= (len(t1)-1):
+    if(n <= len(t1)):
         lst2.reverse()
         for i in range(0, len(lst2)):
             lst.insert(n, lst2[i])
