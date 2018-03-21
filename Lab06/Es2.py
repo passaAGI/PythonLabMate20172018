@@ -4,13 +4,12 @@ import sys
 
 def isPrime(n):
     i = 2
-    flag = True
-    while flag:
-        if(n%i == 0):
+    if(n == 1):
+        return False
+    while n > i:
+        if(n%i == 0 & i != n):
             return False
-        else:
-            i += 1
-            if(n%i != 0):
-                return True
-
-print(isPrime(7))
+            break
+        i += 1
+    else:
+        return True
